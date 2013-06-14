@@ -5,7 +5,7 @@ WebPerf provides a unified API for web performance
 
 
 Usage
-=====
+-----
 
 Insert 0/1/2.js to proper position of the document. For example, if you use PHP:
 
