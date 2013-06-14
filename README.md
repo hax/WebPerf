@@ -48,3 +48,14 @@ WebPerf.setLogger(function(){
 })
 </script>
 ```
+
+API
+---
+
+### WebPerf.navigationTiming() ###
+### WebPerf.nt() ###
+### WebPerf.setLogger(Function) ###
+
+### WebPerf.t0 ###
+### WebPerf.vendor ###
+### window.pPerformance ###
