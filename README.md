@@ -9,7 +9,7 @@ Usage
 
 Insert 0/1/2.js to proper position of the document. For example, if you use PHP:
 
-```html
+```php
 <!doctype html>
 <html>
 <head>
@@ -39,7 +39,7 @@ WebPerf.setLogger(function(){
 
 If you want to send data to server, you could use WebPerf.nt() method which returns a compact object to minimize the length of the request url.
 
-```
+```html
 <script>
 WebPerf.setLogger(function(){
 	// use Google Analytics
