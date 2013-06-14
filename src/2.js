@@ -32,7 +32,8 @@ void function(){
 	var ignores = /^(name|entryType|startTime|duration|navigationStart)$/
 	function compact(t) {
 		//console.log(JSON.stringify(t))
-		var o = {'V': WebPerf.vendor, 'T0': WebPerf.t0}
+		var o = {T0: WebPerf.t0}
+		if (WebPerf.vendor) o.V = WebPerf.vendor
 		for (var k in t) {
 			if (ignores.test(k)) continue
 			if (!o[k]) {

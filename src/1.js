@@ -71,7 +71,7 @@ void function(){
 					name: 'document',
 					entryType: 'navigation',
 					startTime: 0,
-					duration: t.loadEventEnd - t0,
+					duration: t.loadEventEnd - t0
 				}
 				entry.redirectCount = n.redirectCount
 				switch (n.type) {
@@ -80,11 +80,10 @@ void function(){
 					case n.TYPE_BACK_FORWARD:	type = 'back_forward';	break
 					default:	type = n.type
 				}
-				var 
 				for (var k in t) {
 					if (
 						// ignore props on Object.prototype
-						!o[k] &&
+						!entry[k] &&
 						// only navigation attributes,
 						// ignore others like toJSON on IE
 						typeof t[k] === 'number' &&
@@ -93,10 +92,10 @@ void function(){
 						// ignore attributes return 0 value
 						t[k]
 					) {
-						o[k] = t[k] - t0
+						entry[k] = t[k] - t0
 					}
 				}
-				return o
+				return entry
 			}
 		}
 	}
