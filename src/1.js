@@ -77,8 +77,8 @@ void function(){
 				switch (n.type) {
 					case n.TYPE_NAVIGATE:	entry.type = 'navigate';	break
 					case n.TYPE_RELOAD:	entry.type = 'reload';	break
-					case n.TYPE_BACK_FORWARD:	type = 'back_forward';	break
-					default:	type = n.type
+					case n.TYPE_BACK_FORWARD:	entry.type = 'back_forward';	break
+					default:	entry.type = n.type
 				}
 				for (var k in t) {
 					if (
